@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   return (
-    <div className="px-5 py-10 flex flex-col justify-center items-center gap-5">
+    <div className="px-5 py-10 flex flex-col justify-center items-center gap-5 mb-10">
       <p className="text-3xl font-bold text-Arima">Explore</p>
       <CardContainer>
         <Card

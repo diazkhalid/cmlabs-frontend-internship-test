@@ -2,6 +2,7 @@ import Header from "@/components/organisms/Header";
 import "./globals.css";
 import Main from "@/components/organisms/Main";
 import { Providers } from "./provider";
+import Footer from "@/components/organisms/Footer";
 
 export const metadata = {
   title: "Flavor Guide",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header></Header>
           <Main>{children}</Main>
+          <Footer></Footer>
         </Providers>
       </body>
     </html>

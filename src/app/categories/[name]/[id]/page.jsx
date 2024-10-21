@@ -28,7 +28,7 @@ export default function MealDetail({ params }) {
   useEffect(() => {
     console.log(data);
     if (data) {
-      $(".flex").fadeIn();
+      $(".flex").fadeIn(500);
     }
   }, [data]);
   return (
