@@ -21,7 +21,6 @@ export default function CategoryFoods({ params }) {
   }, []);
 
   useEffect(() => {
-    console.log(data);
     if (data) {
       $("#this").slideDown(500);
     }

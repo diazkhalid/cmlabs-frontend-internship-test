@@ -20,7 +20,6 @@ export default function Categories() {
   }, []);
 
   useEffect(() => {
-    console.log(data);
     if (data) {
       $("#this").slideDown(500);
     }

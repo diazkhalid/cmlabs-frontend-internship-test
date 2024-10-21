@@ -12,7 +12,6 @@ export async function getFoodsByCategoryName(name) {
   const response = await axios.get(
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${name}`
   );
-  console.log(response);
   return response.data;
 }
 

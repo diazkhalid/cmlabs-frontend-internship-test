@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <div
       id="footer"
-      className="p-7 flex justify-center items-center bg-primary text-white text-Arima mt-20"
+      className="p-7 flex justify-center items-center bg-primary text-white text-Arima mt-40"
     >
       <h1 className="text-md md:text-lg">© 2024 All Right Reserved</h1>
     </div>
