@@ -10,7 +10,11 @@ export default function Home() {
     <div className="px-5 py-10 flex flex-col justify-center items-center gap-5">
       <p className="text-3xl font-bold text-Arima">Explore</p>
       <CardContainer>
-        <Card title="Food Categories" imgUrl="/images/food-1.png"></Card>
+        <Card
+          title="Food Categories"
+          imgUrl="/images/food-1.png"
+          desc="Choose food categories"
+        ></Card>
         <Card
           title="Random Food"
           imgUrl="/images/food-2.png"

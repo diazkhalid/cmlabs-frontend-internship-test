@@ -6,7 +6,7 @@ import React, { useState } from "react";
 export default function Card({
   title = "Food Categories",
   imgUrl = "/images/hero-img.jpeg",
-  desc = "Choose your food categories",
+  desc,
   route = "/categories",
 }) {
   const navigate = useRouter();
@@ -18,7 +18,7 @@ export default function Card({
       onMouseLeave={() => setIsHovered(false)}
       className="flex flex-col justify-center items-center p-3 bg-zinc-100 rounded-xl gap-5 cursor-pointer border-2 border-primary/50"
     >
-      <div className="w-72 h-64 overflow-hidden rounded-md">
+      <div className="w-64 sm:w-72 h-64 overflow-hidden rounded-md">
         <Image
           src={imgUrl}
           width={300}
@@ -29,9 +29,11 @@ export default function Card({
           }`}
         ></Image>
       </div>
-      <div className="flex flex-col items-center justify-center">
-        <p className="font-bold text-Arima text-xl">{title}</p>
-        <p>{desc}</p>
+      <div className="flex flex-col items-center justify-center w-64 sm:w-72">
+        <h1 className="font-bold text-Arima text-xl text-center truncate w-full">
+          {title}
+        </h1>
+        {desc && <p>{desc}</p>}
       </div>
     </div>
   );
