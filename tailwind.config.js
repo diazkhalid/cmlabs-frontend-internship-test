@@ -7,9 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to top, #00000000, #00000000, #0000007f, #000000)",
+        "custom-gradient-yellow":
+          "linear-gradient(to bottom, #FBB136, #00000000, #00000000, #00000000)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#FBB136",
       },
     },
   },
