@@ -2,7 +2,6 @@ import {
   getFoodsByCategoryName,
   getFoodsCategories,
 } from "@/services/foodsCategories";
-import axios from "axios";
 
 export async function getRandomMeal() {
   const categories = await getFoodsCategories();
