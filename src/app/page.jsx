@@ -16,7 +16,10 @@ export default function Home() {
 
   return (
     <div className="px-5 py-10 flex flex-col justify-center items-center gap-5 mb-10">
-      <p className="text-3xl font-bold text-Arima">Explore</p>
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-3xl font-bold text-Arima">Explore</p>
+        <hr className="border-2 border-primary w-3/4" />
+      </div>
       <CardContainer>
         <Card
           title="Food Categories"

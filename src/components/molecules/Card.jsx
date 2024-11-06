@@ -18,7 +18,7 @@ export default function Card({
       onMouseLeave={() => setIsHovered(false)}
       className="flex flex-col justify-center items-center p-3 bg-zinc-100 rounded-xl gap-5 cursor-pointer border-2 border-primary/50"
     >
-      <div className="w-64 sm:w-72 h-64 overflow-hidden rounded-md">
+      <div className="w-64 sm:w-72 h-64 overflow-hidden rounded-lg">
         <Image
           src={imgUrl}
           width={300}
